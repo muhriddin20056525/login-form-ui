@@ -1,0 +1,294 @@
+/* ======================== Google Fontst ======================== */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/* ======================== Basic CSS ======================== */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Open Sans", serif;
+}
+
+:root {
+  --blue: #3949ab;
+  --white: #ffffff;
+  --gray: #828282;
+  --blue-text: #6f74dd;
+  --black: #343434;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ======================== Form ======================== */
+
+.form {
+  width: 1000px;
+  max-width: 90%;
+  height: 743px;
+  border-radius: 15px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  border: 1px solid #e6e9fa;
+}
+
+/* ======================== Form Left ======================== */
+
+.form-left {
+  background-color: var(--blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  position: relative;
+}
+
+.form-left .img-1 {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+}
+
+.form-left-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 300px;
+  align-items: center;
+}
+
+.form-left-img img {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.form-left-img .img-bg {
+  width: 221px;
+  height: 221px;
+  background-color: #00227b;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.form-left h3 {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.form-left p {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--white);
+  margin-top: 4px;
+}
+
+.form-left-check {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: absolute;
+  bottom: 60px;
+}
+
+.form-left-check span {
+  width: 24px;
+  height: 24px;
+  border-radius: 50px;
+  background-color: #00227b;
+  position: relative;
+}
+
+.form-left-check span.active {
+  background-color: #6f74dd;
+}
+
+.form-left-check span.active::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #f3f4fc;
+}
+
+/* ======================== End of Form Left ======================== */
+
+/* ======================== Form Right ======================== */
+
+.form-right {
+  padding: 134px 64px;
+}
+
+.form-right h2 {
+  text-align: center;
+  color: var(--black);
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 64px;
+}
+
+.form-right-input {
+  width: 358px;
+  max-width: 100%;
+  height: 40px;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.form-right-input input {
+  width: 100%;
+  height: 100%;
+  padding: 10px 40px;
+  outline: none;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+}
+
+.form-right-input i {
+  position: absolute;
+  font-size: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--gray);
+}
+
+.form-right-input .fa-envelope {
+  left: 10px;
+}
+
+.form-right-input .fa-lock {
+  left: 10px;
+}
+
+.form-right-input .fa-eye {
+  right: 10px;
+  cursor: pointer;
+}
+
+.form-right a {
+  display: block;
+  text-align: right;
+  margin-bottom: 32px;
+  color: #6f74dd;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.form-right > button {
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.form-right .line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 8px;
+}
+
+.line span {
+  width: 93px;
+  height: 1px;
+  background-color: #e6e9fa;
+}
+
+.line p {
+  color: var(--gray);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.form-right-social,
+.form-right-social button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.form-right-social button {
+  width: 175px;
+  height: 40px;
+  border-radius: 40px;
+  border: 1px solid var(--blue);
+  background-color: transparent;
+}
+
+.form-right-social span {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--blue);
+}
+
+.form-right > p {
+  color: var(--gray);
+  text-align: center;
+  margin: 24px 0px 16px;
+}
+
+.form-right button:last-child {
+  background-color: transparent;
+  color: var(--blue);
+  border: 1px solid var(--blue);
+}
+
+/* ======================== End of Form Right ======================== */
+
+/* ======================== Responsive ======================== */
+
+@media (max-width: 950px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+  .form-left {
+    display: none;
+  }
+
+  .form-right-input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .form-right-input {
+    width: 100%;
+  }
+
+  .form-right button {
+    width: 90%;
+  }
+}
+
+@media (max-width: 380px) {
+  .form-right-social {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+}
