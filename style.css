@@ -281,7 +281,7 @@ body {
   }
 
   .form-right button {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -290,5 +290,13 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 20px;
+  }
+
+  .form-right-social button {
+    width: 100%;
+  }
+
+  .form-right-social button:last-child {
+    width: 100%;
   }
 }
